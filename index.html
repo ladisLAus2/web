@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <meta name="description" content="art site">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleFirstPage.css" />
     <title>MyAcademy</title>
 </head>
 <body>
-    <header id="header" class="row" style="background-color: #132451;">
+    <header class="header">
         <a href="/" class="logo">
             <picture>
                 <source srcset="/images/big-mobile-logo.png" media="(max-width:550px)">
@@ -16,67 +18,86 @@
             </picture>
         </a>
         <nav>
-            <ul class="menu">
+            <ul class="nav_links">
                 <li>
-                    <a class="nav-item" href="#">Про нас</a>
+                    <a href="#">Про нас</a>
                 </li>
                 <li>
-                    <a class="nav-item" href="#">Ціни</a>
+                    <a href="#">Ціни</a>
                 </li>
                 <li>
-                    <a class="nav-item" href="#">Підтримка</a>
+                    <a href="#">Підтримка</a>
                 </li>
-                <li>
-                    <div class="Blog nav-item">
-                        <span>Блог</span>
-                        <div class="Blog-content">
-                            <a href="#">Text</a>
-                            <a href="#">Text</a>
-                            <a href="#">Text</a>
-                        </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Блог</button>
+                    <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                     </div>
-                </li>
+                </div>
+                
             </ul>
-            <a  class="nav-item" href="#">Реєстрація</a>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
+        <a  class="header-button" href="#">
+            Реєстрація
+        </a>
+        <div class="mobile hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <section id="hero">
-        <picture>
+        <!-- <picture>
             <source srcset="./images/background-mobile-first-page.png" media="(max-width:719px)">
             <source srcset="./images/background-first-page.svg" media="(min-width:720px)">
             <img src="/images/background-first-page.svg" alt="hero-image">
-        </picture>
-        <h1 class="banner">Професійна художня школа MyAcademy</h1>
-        <p>Пропонуємо курси створення персонажів та коміксів в стилі манги та аніме. <br>Занурюйся до захопливого світу японської графіки</p>
-        <a href="./secondpage.html">Детальніше</a>
-        <a href="#">Записатися</a>
+        </picture> -->
+        <div class="hero-content">
+            <h1 class="banner">Професійна художня школа MyAcademy</h1>
+            <p class="banner-content">Пропонуємо курси створення персонажів та коміксів в стилі манги та аніме. <br>Занурюйся до захопливого світу японської графіки</p>
+            <a class="more"href="./secondpage.html">Детальніше</a>
+            <a class="subscribe"href="#">Записатися</a>
+        </div>
     </section>
-    <section id="footer" class="row" style="background-color: #122451;">
-        <a href="/" class="logo">
+    <section class="footer">
+        <a href="/" class="logo foot">
             <picture>
                 <source srcset="/images/small-logo-mobile.png" media="(max-width:550px)">
                 <img src="/images/small_logo_desktop.svg" alt="small-logo">
             </picture>
         </a>
-        <a href="#">Про нас</a>
-        <a href="#">Ціни</a>
-        <a href="#">Підтримка</a>
-        <div class="Blog">
-            <span>Блог</span>
-            <div class="Blog-content">
-                <a href="#">Text</a>
-                <a href="#">Text</a>
-                <a href="#">Text</a>
-            </div>
+        <nav>
+            <ul class="nav_links">
+                <li>
+                    <a href="#">Про нас</a>
+                </li>
+                <li>
+                    <a href="#">Ціни</a>
+                </li>
+                <li>
+                    <a href="#">Підтримка</a>
+                </li>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Блог</button>
+                    <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    </div>
+                </div>
+                
+            </ul>
+        </nav>
+        <div class="social">
+            <img src="./images/telegram_purple_logo.svg" alt="Telegram">
+            <img src="./images/facebook_purple_logo.svg" alt="Facebook">
+            <img src="./images/Instagram_purple_logo.svg" alt="Instagram">
         </div>
-        <img src="./images/telegram_purple_logo.svg" alt="Telegram">
-        <img src="./images/facebook_purple_logo.svg" alt="Facebook">
-        <img src="./images/Instagram_purple_logo.svg" alt="Instagram">
+        
     </section>
 </body>
 </html>

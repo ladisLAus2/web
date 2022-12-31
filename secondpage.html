@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="art site">
     <title>MyAcademy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSecondPage.css" />
 </head>
 <body>
-    <header id="header" class="row" style="background-color: #000000;">
+    <header class="header">
         <a href="/" class="logo">
             <picture>
                 <source srcset="/images/big-mobile-logo.png" media="(max-width:550px)">
@@ -16,37 +18,39 @@
             </picture>   
         </a>
         <nav>
-            <ul class="menu">
+            <ul class="nav_links">
                 <li>
-                    <a class="nav-item" href="#">Про нас</a>
+                    <a href="#">Про нас</a>
                 </li>
                 <li>
-                    <a class="nav-item" href="#">Ціни</a>
+                    <a href="#">Ціни</a>
                 </li>
                 <li>
-                    <a class="nav-item" href="#">Підтримка</a>
+                    <a href="#">Підтримка</a>
                 </li>
-                <li>
-                    <div class="Blog nav-item">
-                        <span>Блог</span>
-                        <div class="Blog-content">
-                            <a href="#">Text</a>
-                            <a href="#">Text</a>
-                            <a href="#">Text</a>
-                        </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Блог</button>
+                    <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                     </div>
-                </li>
+                </div>
+                
             </ul>
-            <a class="nav-item" href="#">Реєстрація</a>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
+        <a  class="header-button" href="#">
+            Реєстрація
+        </a>
+        <div class="mobile hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         
     </header>
-    <section id="hero" style="background-color: rgb(86, 84, 84);">
+    <section id="hero">
         <figure>
             <picture>
                 <source srcset="./images/background-hero-2page-mobile.png" media="(max-width:719px)">
@@ -104,7 +108,7 @@
             </div>
         </section>
     </section>
-    <section id="footer" style="background-color: black;">
+    <section class="footer">
         <a href="/" class="logo">
             <picture>
                 <source srcset="/images/small-logo-mobile.png" media="(max-width:550px)">
